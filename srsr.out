@@ -1,0 +1,54 @@
+we use 1 processors 
+The duration of the process is 0.029825 
+I am process 0 and i have received 200000 messages. My final messages have tag 0 and value 0 
+I am process 0 and i have received 200000 messages. My final messages have tag 0 and value 0 
+we use 2 processors 
+I am process 1 and i have received 400000 messages. My final messages have tag 0 and value 100000 
+I am process 1 and i have received 400000 messages. My final messages have tag 0 and value -100000 
+The duration of the process is 0.111343 
+I am process 0 and i have received 400000 messages. My final messages have tag 1 and value 100000 
+I am process 0 and i have received 400000 messages. My final messages have tag 1 and value -100000 
+we use 3 processors 
+I am process 1 and i have received 600000 messages. My final messages have tag 2 and value 300000 
+I am process 1 and i have received 600000 messages. My final messages have tag 0 and value -300000 
+I am process 2 and i have received 600000 messages. My final messages have tag 0 and value 300000 
+I am process 2 and i have received 600000 messages. My final messages have tag 1 and value -300000 
+The duration of the process is 0.213799 
+I am process 0 and i have received 600000 messages. My final messages have tag 1 and value 300000 
+I am process 0 and i have received 600000 messages. My final messages have tag 2 and value -300000 
+we use 4 processors 
+I am process 1 and i have received 800000 messages. My final messages have tag 2 and value 600000 
+I am process 1 and i have received 800000 messages. My final messages have tag 0 and value -600000 
+I am process 2 and i have received 800000 messages. My final messages have tag 3 and value 600000 
+I am process 2 and i have received 800000 messages. My final messages have tag 1 and value -600000 
+I am process 3 and i have received 800000 messages. My final messages have tag 0 and value 600000 
+I am process 3 and i have received 800000 messages. My final messages have tag 2 and value -600000 
+The duration of the process is 0.280093 
+I am process 0 and i have received 800000 messages. My final messages have tag 1 and value 600000 
+I am process 0 and i have received 800000 messages. My final messages have tag 3 and value -600000 
+we use 5 processors 
+I am process 1 and i have received 1000000 messages. My final messages have tag 2 and value 1000000 
+I am process 1 and i have received 1000000 messages. My final messages have tag 0 and value -1000000 
+I am process 2 and i have received 1000000 messages. My final messages have tag 3 and value 1000000 
+I am process 2 and i have received 1000000 messages. My final messages have tag 1 and value -1000000 
+I am process 3 and i have received 1000000 messages. My final messages have tag 4 and value 1000000 
+I am process 3 and i have received 1000000 messages. My final messages have tag 2 and value -1000000 
+I am process 4 and i have received 1000000 messages. My final messages have tag 0 and value 1000000 
+I am process 4 and i have received 1000000 messages. My final messages have tag 3 and value -1000000 
+The duration of the process is 0.337054 
+I am process 0 and i have received 1000000 messages. My final messages have tag 1 and value 1000000 
+I am process 0 and i have received 1000000 messages. My final messages have tag 4 and value -1000000 
+we use 6 processors 
+I am process 5 and i have received 1200000 messages. My final messages have tag 0 and value 1500000 
+I am process 5 and i have received 1200000 messages. My final messages have tag 4 and value -1500000 
+The duration of the process is 0.419811 
+I am process 0 and i have received 1200000 messages. My final messages have tag 1 and value 1500000 
+I am process 0 and i have received 1200000 messages. My final messages have tag 5 and value -1500000 
+I am process 1 and i have received 1200000 messages. My final messages have tag 2 and value 1500000 
+I am process 1 and i have received 1200000 messages. My final messages have tag 0 and value -1500000 
+I am process 2 and i have received 1200000 messages. My final messages have tag 3 and value 1500000 
+I am process 2 and i have received 1200000 messages. My final messages have tag 1 and value -1500000 
+I am process 3 and i have received 1200000 messages. My final messages have tag 4 and value 1500000 
+I am process 3 and i have received 1200000 messages. My final messages have tag 2 and value -1500000 
+I am process 4 and i have received 1200000 messages. My final messages have tag 5 and value 1500000 
+I am process 4 and i have received 1200000 messages. My final messages have tag 3 and value -1500000 
