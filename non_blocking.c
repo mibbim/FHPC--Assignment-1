@@ -3,6 +3,7 @@
 
 #define FALSE 0
 #define TRUE 1
+#define NLAP 100000
 
 int main(int argc, char *argv[])
 {
@@ -95,7 +96,7 @@ int main(int argc, char *argv[])
     //     fflush(stdout);
     // }
 
-    for (int i = 0; i < numprocs - 1; ++i)
+    for (int i = 0; i < (numprocs * NLAP) - 1; ++i)
     {
         int watch = i;
         msg_to_left = msg_from_right + myid;
@@ -105,6 +106,7 @@ int main(int argc, char *argv[])
         // printf("%d: sending %d to %d, tag: %d, ", myid, msg_to_left, left_processor, tag);
         MPI_Isend(&msg_to_left, msg_size, MPI_INT, left_processor, tag, ring, &request_left_send);
         MPI_Irecv(&msg_from_right, msg_size, MPI_INT, right_processor, MPI_ANY_TAG, ring, &request_right_recv);
+
         MPI_Wait(&request_left_send, &status_left_send);
         MPI_Wait(&request_right_recv, &status_right_recv);
         ++msg_counter;
@@ -128,17 +130,17 @@ int main(int argc, char *argv[])
         // }
     }
 
-    printf("I am process %d and i have received %d messages. My final messages have tag %d and value %d \n", myid, msg_counter, status_right_recv.MPI_TAG, msg_from_right);
-    printf("I am process %d and i have received %d messages. My final messages have tag %d and value %d \n", myid, msg_counter, status_left_recv.MPI_TAG, msg_from_left);
-
     MPI_Barrier(MPI_COMM_WORLD);
 
     if (myid == master)
     {
         end_time = MPI_Wtime();
         double time = end_time - start_time;
-        // printf("The duration of the process is %f \n", time);
+        printf("The duration of the process is %f \n", time);
+        fflush(stdout);
     }
+    printf("I am process %d and i have received %d messages. My final messages have tag %d and value %d \n", myid, msg_counter, status_right_recv.MPI_TAG, msg_from_right);
+    printf("I am process %d and i have received %d messages. My final messages have tag %d and value %d \n", myid, msg_counter, status_left_recv.MPI_TAG, msg_from_left);
 
     MPI_Finalize();
     return 0;
