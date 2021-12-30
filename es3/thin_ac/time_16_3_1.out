@@ -1,0 +1,4 @@
+user:, 830.28, system:, 20.29, elapsed:, 35.98, CPU:, 2363%, CMD:, mpirun --mca btl ^openib --map-by core -np 48 jacoby3D.x 
+
+user:, 828.68, system:, 19.61, elapsed:, 35.85, CPU:, 2365%, CMD:, mpirun --mca btl ^openib --map-by node -np 48 jacoby3D.x 
+

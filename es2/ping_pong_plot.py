@@ -232,7 +232,7 @@ def produce_plot(df):
         group.plot(x="size", y="bw", label="Bandwidth", ax=ax)
         # group.plot(x="size", y="comp_bw", label="Computed Bandwith", ax=ax)
         ax.set_xscale("log")
-        title = key[:-3].replace("self", "")
+        title = key[:-4].replace("self", "")
         ax.set_title(title)
         plt.savefig(os.path.join(out_path, title + '.png'))
 

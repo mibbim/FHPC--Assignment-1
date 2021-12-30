@@ -1,3 +1,5 @@
+data = "thin"
+
 plot = False
 
 plot_time_fit = True
@@ -18,10 +20,17 @@ if not plot:
     triple_barplots = False
     triple_bw_plt = False
 
-path = "out1"
-path = "out1"
-path = "out1"
-path = "gpu_shared"
-path = "selection"
+# path = "out1"
+# path = "out1"
+# path = "out1"
+paths = {
+    "gpu": "gpu_shared",
+    "thin": "out",
+}
+output_path = {
+    "gpu": "gpu_csv_and_plots",
+    "thin": "thin_csv_and_plots",
+}
+path = paths[data]
 
-out_path = "csvs"
+out_path = output_path[data]
