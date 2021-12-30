@@ -200,7 +200,7 @@ def produce_csv(df):
     header_prefix = "#header_line "
     for key, group in grouped:
         CMD = commands[key]
-        out_filename = os.path.join(out_path, key[:-3] + "csv").replace("self", "")
+        out_filename = os.path.join(out_path, data + "_" + key[:-3] + "csv").replace("self", "")
         Bandwidth, Latency = param_df[["bw", "lambda"]].query("index == @key").values[0]
 
         line1 = header_prefix + "1: " + CMD
@@ -232,7 +232,7 @@ def produce_plot(df):
         group.plot(x="size", y="bw", label="Bandwidth", ax=ax)
         # group.plot(x="size", y="comp_bw", label="Computed Bandwith", ax=ax)
         ax.set_xscale("log")
-        title = key[:-4].replace("self", "")
+        title = data + "_" + key[:-4].replace("self", "")
         ax.set_title(title)
         plt.savefig(os.path.join(out_path, title + '.png'))
 
