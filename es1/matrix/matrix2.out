@@ -1,0 +1,21 @@
+user : 4.58 system: 2.04 elapsed: 6.77 CPU: 98% CMD: mpirun --mca btl ^openib -np 1 matrix.x 2400 1000 100
+
+user : 9.49 system: 2.58 elapsed: 6.19 CPU: 195% CMD: mpirun --mca btl ^openib -np 2 matrix.x 2400 1000 100
+
+user : 20.09 system: 3.20 elapsed: 6.11 CPU: 380% CMD: mpirun --mca btl ^openib -np 4 matrix.x 2400 1000 100
+
+user : 42.28 system: 3.75 elapsed: 6.18 CPU: 744% CMD: mpirun --mca btl ^openib -np 8 matrix.x 2400 1000 100
+
+user : 53.66 system: 3.95 elapsed: 6.25 CPU: 920% CMD: mpirun --mca btl ^openib -np 10 matrix.x 2400 1000 100
+
+user : 64.82 system: 4.14 elapsed: 6.27 CPU: 1099% CMD: mpirun --mca btl ^openib -np 12 matrix.x 2400 1000 100
+
+user : 73.32 system: 4.01 elapsed: 6.03 CPU: 1280% CMD: mpirun --mca btl ^openib -np 14 matrix.x 2400 1000 100
+
+user : 83.47 system: 4.13 elapsed: 5.99 CPU: 1460% CMD: mpirun --mca btl ^openib -np 16 matrix.x 2400 1000 100
+
+user : 94.24 system: 4.34 elapsed: 6.03 CPU: 1632% CMD: mpirun --mca btl ^openib -np 18 matrix.x 2400 1000 100
+
+user : 104.91 system: 4.41 elapsed: 6.04 CPU: 1808% CMD: mpirun --mca btl ^openib -np 20 matrix.x 2400 1000 100
+
+user : 126.71 system: 4.95 elapsed: 6.16 CPU: 2134% CMD: mpirun --mca btl ^openib -np 24 matrix.x 2400 1000 100

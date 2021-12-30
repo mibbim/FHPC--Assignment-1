@@ -126,9 +126,5 @@ assignment_1_hpc_2021.iml
 assignment_1_hpc_2021.iml
 /**/assignment_1_hpc_2021.iml
 **/assignment_1_hpc_2021.iml
-/es1/matrix/matrix0.out
-/es1/matrix/matrix1.out
-/es1/matrix/matrix2.out
-/es1/matrix/matrix3.out
 es1/ring/non_blocking.c
 es1/ring/non_blocking_seq.c
